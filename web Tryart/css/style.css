@@ -1,0 +1,109 @@
+/* Mengatur font global */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Logo kecil di pojok kanan atas */
+#small-logo {
+    position: absolute;
+    top: 1%; /* Menempatkan logo di tengah secara vertikal */
+    left: 50%; /* Menempatkan logo 1rem dari sisi kiri */
+    transform: translateX(-50%); /* Menggeser logo agar benar-benar di tengah secara vertikal */
+}
+
+#small-logo img {
+    max-width: 200%; /* Pastikan ukuran sesuai dengan gambar */
+    height: auto; /* Jaga proporsi gambar */
+    display: block;
+}
+
+/* Logo selamat datang di tengah halaman */
+#welcome-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+}
+
+/* Bagian Header dan Navbar */
+header {
+    background-color: #EBF8FF;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Audio Background Styles */
+#audio-controls {
+    position: fixed; /* Keep it fixed on the screen */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for visibility */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding around the controls */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center items vertically */
+}
+
+/* Styles for Play Button */
+#play-button {
+    background-color: #135968; /* Dark blue */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 8px 12px; /* Padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+#play-button:hover {
+    background-color: #0e3d47; /* Darker blue on hover */
+}
+
+header nav a {
+    color: #135968;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #135968;
+}
+
+/* Bagian Konten Utama */
+main {
+    padding: 1rem;
+}
+
+/* Kartu untuk layanan/portofolio */
+section .grid .bg-white {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Video dan Thumbnail */
+#video-thumbnail {
+    cursor: pointer;
+}
+
+#myVideo.hidden {
+    display: none;
+}
+
+/* Bagian Footer */
+footer {
+    background-color: #EBF8FF;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p {
+    color: #4A5568;
+}
